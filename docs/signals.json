@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T07:16",
+ "updated": "2026-10-17T07:33",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -9,9 +9,38 @@
  "history": [
   {
    "date": "2026-10-17",
-   "scanned": 56,
+   "scanned": 514,
    "signals": [
     {
+     "day_gain_pct": -1.032,
+     "close": 985.98,
+     "support": 993.276,
+     "dist_pct": -0.735,
+     "touches": 6,
+     "kind": "pivot",
+     "vol_ratio": 1.531,
+     "close_pos": 0.501,
+     "stop": 953.545,
+     "target": 1183.176,
+     "ticker": "EQIX",
+     "date": "2026-10-16"
+    },
+    {
+     "day_gain_pct": 2.976,
+     "close": 71.28,
+     "support": 71.062,
+     "dist_pct": 0.307,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.344,
+     "close_pos": 0.91,
+     "stop": 68.219,
+     "target": 85.536,
+     "ticker": "WMB",
+     "date": "2026-10-16"
+    },
+    {
+     "day_gain_pct": 3.728,
      "close": 193.92,
      "support": 190.884,
      "dist_pct": 1.59,
@@ -25,16 +54,73 @@
      "date": "2026-10-16"
     },
     {
-     "close": 552.09,
-     "support": 541.94,
-     "dist_pct": 1.873,
+     "day_gain_pct": 2.41,
+     "close": 171.25,
+     "support": 170.674,
+     "dist_pct": 0.338,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.239,
+     "close_pos": 0.99,
+     "stop": 163.847,
+     "target": 205.5,
+     "ticker": "CINF",
+     "date": "2026-10-16"
+    },
+    {
+     "day_gain_pct": 2.243,
+     "close": 91.18,
+     "support": 91.88,
+     "dist_pct": -0.761,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.231,
+     "close_pos": 0.98,
+     "stop": 88.204,
+     "target": 109.416,
+     "ticker": "SO",
+     "date": "2026-10-16"
+    },
+    {
+     "day_gain_pct": 1.059,
+     "close": 22.91,
+     "support": 22.837,
+     "dist_pct": 0.322,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.241,
+     "close_pos": 0.579,
+     "stop": 21.923,
+     "target": 27.492,
+     "ticker": "KIM",
+     "date": "2026-10-16"
+    },
+    {
+     "day_gain_pct": 2.825,
+     "close": 82.26,
+     "support": 81.606,
+     "dist_pct": 0.801,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 2.034,
+     "close_pos": 0.733,
+     "stop": 78.342,
+     "target": 98.712,
+     "ticker": "CCI",
+     "date": "2026-10-16"
+    },
+    {
+     "day_gain_pct": 1.27,
+     "close": 51.02,
+     "support": 50.392,
+     "dist_pct": 1.247,
      "touches": 0,
      "kind": "ma50",
-     "vol_ratio": 1.363,
-     "close_pos": 0.936,
-     "stop": 520.262,
-     "target": 662.508,
-     "ticker": "LMT",
+     "vol_ratio": 1.231,
+     "close_pos": 0.79,
+     "stop": 48.376,
+     "target": 61.224,
+     "ticker": "FAST",
      "date": "2026-10-16"
     }
    ]
