@@ -1,1 +1,43 @@
-{"updated":"","config":{"tolerance_pct":0.02,"stop_pct":0.04,"target_pct":0.2,"min_touches":2},"history":[]}
+{
+ "updated": "2026-10-17T07:16",
+ "config": {
+  "tolerance_pct": 0.02,
+  "stop_pct": 0.04,
+  "target_pct": 0.2,
+  "min_touches": 2
+ },
+ "history": [
+  {
+   "date": "2026-10-17",
+   "scanned": 56,
+   "signals": [
+    {
+     "close": 193.92,
+     "support": 190.884,
+     "dist_pct": 1.59,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.834,
+     "close_pos": 0.937,
+     "stop": 183.249,
+     "target": 232.704,
+     "ticker": "RTX",
+     "date": "2026-10-16"
+    },
+    {
+     "close": 552.09,
+     "support": 541.94,
+     "dist_pct": 1.873,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.363,
+     "close_pos": 0.936,
+     "stop": 520.262,
+     "target": 662.508,
+     "ticker": "LMT",
+     "date": "2026-10-16"
+    }
+   ]
+  }
+ ]
+}
