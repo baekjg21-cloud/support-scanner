@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#111111">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>Support Scan</title>
+<style>
+  :root{
+    --bg:#0f0f0f; --card:#181818; --line:#262626;
+    --fg:#ececec; --mute:#8a8a8a; --dim:#5a5a5a;
+    --accent:#7CE3A3;          /* 단일 강조색 */
+    --warn:#e0a86b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--fg);
+    font-family:-apple-system,"SF Pro Text","Pretendard",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  body{padding:env(safe-area-inset-top) 16px calc(32px + env(safe-area-inset-bottom))}
+  header{padding:28px 0 18px;display:flex;align-items:flex-end;justify-content:space-between}
+  h1{font-size:22px;font-weight:600;letter-spacing:-.3px}
+  h1 small{display:block;font-size:12px;color:var(--mute);font-weight:400;margin-top:4px}
+  .pill{font-size:11px;color:var(--mute);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+  .days{display:flex;gap:8px;overflow-x:auto;padding:4px 0 16px;scrollbar-width:none}
+  .days::-webkit-scrollbar{display:none}
+  .day{flex:0 0 auto;font-size:12px;color:var(--mute);background:var(--card);
+    border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;white-space:nowrap}
+  .day b{display:block;color:var(--fg);font-size:14px;font-weight:600}
+  .day.on{border-color:var(--accent);color:var(--fg)}
+  .day.on b{color:var(--accent)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:10px}
+  .row{display:flex;justify-content:space-between;align-items:baseline}
+  .tk{font-size:20px;font-weight:700;letter-spacing:-.2px}
+  .px{font-size:18px;font-variant-numeric:tabular-nums}
+  .sub{font-size:12px;color:var(--mute);margin-top:4px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+  .k{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.6px}
+  .v{font-size:14px;margin-top:2px;font-variant-numeric:tabular-nums}
+  .v.acc{color:var(--accent)}
+  .v.warn{color:var(--warn)}
+  .bar{position:relative;height:4px;background:var(--line);border-radius:2px;margin-top:14px}
+  .bar i{position:absolute;top:-3px;width:10px;height:10px;border-radius:50%;background:var(--accent);transform:translateX(-50%)}
+  .bar s{position:absolute;top:-3px;width:1px;height:10px;background:var(--mute)}
+  .legend{display:flex;justify-content:space-between;font-size:10px;color:var(--dim);margin-top:6px}
+  .empty{color:var(--mute);text-align:center;padding:60px 0;font-size:14px;line-height:1.7}
+  footer{margin-top:28px;font-size:11px;color:var(--dim);line-height:1.6}
+  a{color:var(--mute)}
+</style>
+</head>
+<body>
+<header>
+  <h1>지지선 매수 후보<small id="meta">불러오는 중…</small></h1>
+  <span class="pill" id="count"></span>
+</header>
+<div class="days" id="days"></div>
+<main id="list"></main>
+<footer>
+  조건: 2회 이상 터치된 지지선(또는 MA50/200) 2% 이내 · MA200 위 · 거래량 20일 평균 1.2배↑ · 캔들 상단 마감.<br>
+  알림일 뿐 매수 지시가 아님. 차트와 뉴스를 직접 확인하고 판단할 것.
+</footer>
+<script>
+const $=s=>document.querySelector(s);
+const fmt=n=>'$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const kindName={pivot:'피봇 저점',ma50:'MA50',ma200:'MA200'};
+let data,sel;
+
+async function load(){
+  try{
+    const r=await fetch('signals.json?t='+Date.now(),{cache:'no-store'});
+    data=await r.json();
+  }catch(e){
+    $('#list').innerHTML='<div class="empty">signals.json이 아직 없음<br>GitHub Actions를 한 번 실행하면 생김</div>';
+    $('#meta').textContent='';return;
+  }
+  const h=data.history||[];
+  if(!h.length){$('#list').innerHTML='<div class="empty">이력 없음</div>';return;}
+  sel=h[h.length-1].date;
+  renderDays(h);render();
+}
+function renderDays(h){
+  $('#days').innerHTML=[...h].reverse().map(d=>{
+    const dt=new Date(d.date);
+    return `<div class="day ${d.date===sel?'on':''}" data-d="${d.date}">
+      ${dt.getMonth()+1}/${dt.getDate()}<b>${d.signals.length}</b></div>`;
+  }).join('');
+  document.querySelectorAll('.day').forEach(el=>el.onclick=()=>{sel=el.dataset.d;renderDays(h);render();});
+}
+function render(){
+  const d=data.history.find(x=>x.date===sel);
+  const upd=new Date(data.updated);
+  $('#meta').textContent=`${sel} · ${d.scanned}종목 스캔 · 갱신 ${upd.getMonth()+1}/${upd.getDate()} ${String(upd.getHours()).padStart(2,'0')}:${String(upd.getMinutes()).padStart(2,'0')}`;
+  $('#count').textContent=d.signals.length+'개';
+  if(!d.signals.length){$('#list').innerHTML='<div class="empty">이 날은 조건을 만족한 종목이 없음</div>';return;}
+  $('#list').innerHTML=d.signals.map(s=>{
+    // 손절 ─ 지지선 ─ 현재가 ─ 목표 위치를 0~1로 표시
+    const lo=s.stop, hi=s.target, p=x=>Math.min(100,Math.max(0,(x-lo)/(hi-lo)*100));
+    return `<div class="card">
+      <div class="row"><span class="tk">${s.ticker}</span><span class="px">${fmt(s.close)}</span></div>
+      <div class="sub">지지선 ${fmt(s.support)} · ${kindName[s.kind]||s.kind}${s.touches?` · 터치 ${s.touches}회`:''}</div>
+      <div class="grid">
+        <div><div class="k">지지선 거리</div><div class="v acc">${s.dist_pct>=0?'+':''}${s.dist_pct.toFixed(1)}%</div></div>
+        <div><div class="k">거래량</div><div class="v">${s.vol_ratio.toFixed(1)}x</div></div>
+        <div><div class="k">캔들 위치</div><div class="v">${Math.round(s.close_pos*100)}%</div></div>
+        <div><div class="k">손절</div><div class="v warn">${fmt(s.stop)}</div></div>
+        <div><div class="k">목표 +${Math.round(data.config.target_pct*100)}%</div><div class="v acc">${fmt(s.target)}</div></div>
+        <div><div class="k">손익비</div><div class="v">${((s.target-s.close)/(s.close-s.stop)).toFixed(1)}</div></div>
+      </div>
+      <div class="bar"><s style="left:${p(s.support)}%"></s><i style="left:${p(s.close)}%"></i></div>
+      <div class="legend"><span>손절</span><span>지지선 | 현재가</span><span>목표</span></div>
+    </div>`;
+  }).join('');
+}
+load();
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>
