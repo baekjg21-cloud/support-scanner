@@ -54,7 +54,7 @@ def scan(data):
             rows.append(sig)
     # 터치 많고, 지지선에 가까운 순
     rows.sort(key=lambda r: (-r["touches"], abs(r["dist_pct"])))
-    return rows
+    return rows[:CFG.get("max_signals", 15)]
 
 
 def format_msg(rows):

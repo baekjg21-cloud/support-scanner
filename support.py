@@ -65,8 +65,17 @@ def find_supports(df: pd.DataFrame, upto: int, cfg: dict) -> list[Support]:
 
     close = df["Close"].values
     for n, kind in ((50, "ma50"), (200, "ma200")):
-        if upto + 1 >= n and cfg.get(f"use_{kind}", True):
-            ma = float(close[upto - n + 1:upto + 1].mean())
+        if upto + 1 >= n + 20 and cfg.get(f"use_{kind}", True):
+            # 이동평균이 '지지'였는지 확인: 최근 20일 중 종가가 MA 위였던 날이
+            # ma_above_ratio 이상일 때만 지지선으로 인정. 아래에 있다가 뚫고
+            # 올라온 경우(저항 돌파)는 제외 — 뉴스 급등을 지지 반등으로 오인 방지.
+            ma_series = pd.Series(close[:upto + 1]).rolling(n).mean().values
+            recent_c = close[upto - 19:upto + 1]
+            recent_ma = ma_series[upto - 19:upto + 1]
+            above = float((recent_c > recent_ma).mean())
+            if above < cfg.get("ma_above_ratio", 0.7):
+                continue
+            ma = float(ma_series[upto])
             sups.append(Support(level=ma, touches=0, kind=kind, last_touch_idx=upto))
     return sups
 
@@ -109,7 +118,14 @@ def check_signal(df: pd.DataFrame, upto: int, cfg: dict) -> dict | None:
     if close_pos < cfg.get("min_close_pos", 0.5):
         return None
 
+    # 당일 급등 제한: 하루 +max_day_gain 이상 뛴 건 지지 반등이 아니라 뉴스 급등 → 제외
+    prev_c = float(df["Close"].values[upto - 1])
+    day_gain = close / prev_c - 1
+    if day_gain > cfg.get("max_day_gain", 0.06):
+        return None
+
     return {
+        "day_gain_pct": day_gain * 100,
         "close": close,
         "support": best.level,
         "dist_pct": (close - best.level) / best.level * 100,

@@ -10,8 +10,11 @@
   "use_ma50": true,
   "use_ma200": true,
   "stop_pct": 0.04,
-  "target_pct": 0.20,
+  "target_pct": 0.2,
   "max_hold_days": 40,
   "history_period": "1y",
-  "tickers_file": "tickers.txt"
+  "tickers_file": "tickers.txt",
+  "ma_above_ratio": 0.7,
+  "max_day_gain": 0.06,
+  "max_signals": 15
 }
