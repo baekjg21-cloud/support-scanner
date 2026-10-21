@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T23:48",
+ "updated": "2026-10-21T23:59",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -198,6 +198,82 @@
      "target": 135.672,
      "ticker": "IRM",
      "date": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 0.083,
+     "close": 72.64,
+     "support": 72.09,
+     "dist_pct": 0.763,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.236,
+     "close_pos": 0.963,
+     "stop": 69.207,
+     "target": 87.168,
+     "ticker": "TECH",
+     "date": "2026-10-21"
+    },
+    {
+     "day_gain_pct": 1.951,
+     "close": 288.96,
+     "support": 288.572,
+     "dist_pct": 0.135,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 3.114,
+     "close_pos": 0.811,
+     "stop": 277.029,
+     "target": 346.752,
+     "ticker": "WAB",
+     "date": "2026-10-21"
+    },
+    {
+     "day_gain_pct": 3.414,
+     "close": 386.47,
+     "support": 380.775,
+     "dist_pct": 1.496,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.288,
+     "close_pos": 0.715,
+     "stop": 365.544,
+     "target": 463.764,
+     "ticker": "TSLA",
+     "date": "2026-10-21"
+    },
+    {
+     "day_gain_pct": 0.0,
+     "close": 14.97,
+     "support": 14.837,
+     "dist_pct": 0.899,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.283,
+     "close_pos": 1.0,
+     "stop": 14.243,
+     "target": 17.964,
+     "ticker": "AES",
+     "date": "2026-10-21"
+    },
+    {
+     "day_gain_pct": 0.833,
+     "close": 176.81,
+     "support": 174.354,
+     "dist_pct": 1.409,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.904,
+     "close_pos": 0.868,
+     "stop": 167.38,
+     "target": 212.172,
+     "ticker": "DVA",
+     "date": "2026-10-21"
     }
    ]
   }
