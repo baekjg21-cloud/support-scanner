@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T23:58",
+ "updated": "2026-10-23T23:50",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -406,6 +406,54 @@
      "target": 136.932,
      "ticker": "NEM",
      "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 1.902,
+     "close": 452.29,
+     "support": 449.535,
+     "dist_pct": 0.613,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.336,
+     "close_pos": 0.612,
+     "stop": 431.554,
+     "target": 542.748,
+     "ticker": "ISRG",
+     "date": "2026-10-23"
+    },
+    {
+     "day_gain_pct": -1.195,
+     "close": 44.66,
+     "support": 44.378,
+     "dist_pct": 0.636,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.947,
+     "close_pos": 0.725,
+     "stop": 42.603,
+     "target": 53.592,
+     "ticker": "VZ",
+     "date": "2026-10-23"
+    },
+    {
+     "day_gain_pct": 0.528,
+     "close": 426.11,
+     "support": 424.634,
+     "dist_pct": 0.348,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.403,
+     "close_pos": 0.756,
+     "stop": 407.648,
+     "target": 511.332,
+     "ticker": "ROK",
+     "date": "2026-10-23"
     }
    ]
   }
