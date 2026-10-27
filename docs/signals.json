@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T23:50",
+ "updated": "2026-10-27T00:22",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -436,6 +436,68 @@
      "kind": "pivot",
      "vol_ratio": 1.947,
      "close_pos": 0.725,
+     "stop": 42.603,
+     "target": 53.592,
+     "ticker": "VZ",
+     "date": "2026-10-23"
+    },
+    {
+     "day_gain_pct": 0.528,
+     "close": 426.11,
+     "support": 424.634,
+     "dist_pct": 0.348,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.403,
+     "close_pos": 0.756,
+     "stop": 407.648,
+     "target": 511.332,
+     "ticker": "ROK",
+     "date": "2026-10-23"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 1.043,
+     "close": 314.77,
+     "support": 312.815,
+     "dist_pct": 0.625,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.32,
+     "close_pos": 0.789,
+     "stop": 300.302,
+     "target": 377.724,
+     "ticker": "KEYS",
+     "date": "2026-10-23"
+    },
+    {
+     "day_gain_pct": 1.902,
+     "close": 452.29,
+     "support": 449.535,
+     "dist_pct": 0.613,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.337,
+     "close_pos": 0.612,
+     "stop": 431.554,
+     "target": 542.748,
+     "ticker": "ISRG",
+     "date": "2026-10-23"
+    },
+    {
+     "day_gain_pct": -1.195,
+     "close": 44.66,
+     "support": 44.378,
+     "dist_pct": 0.636,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.948,
+     "close_pos": 0.745,
      "stop": 42.603,
      "target": 53.592,
      "ticker": "VZ",
