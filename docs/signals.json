@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T00:49",
+ "updated": "2026-10-30T00:50",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -667,6 +667,152 @@
      "target": 279.852,
      "ticker": "IEX",
      "date": "2026-10-27"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 0.829,
+     "close": 1007.66,
+     "support": 993.276,
+     "dist_pct": 1.448,
+     "touches": 6,
+     "kind": "pivot",
+     "vol_ratio": 1.316,
+     "close_pos": 0.775,
+     "stop": 953.545,
+     "target": 1209.192,
+     "ticker": "EQIX",
+     "date": "2026-10-28"
+    },
+    {
+     "day_gain_pct": -0.821,
+     "close": 304.58,
+     "support": 303.511,
+     "dist_pct": 0.352,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.54,
+     "close_pos": 0.711,
+     "stop": 291.371,
+     "target": 365.496,
+     "ticker": "FDX",
+     "date": "2026-10-28"
+    },
+    {
+     "day_gain_pct": 0.157,
+     "close": 44.77,
+     "support": 45.203,
+     "dist_pct": -0.958,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.631,
+     "close_pos": 0.648,
+     "stop": 43.395,
+     "target": 53.724,
+     "ticker": "EXC",
+     "date": "2026-10-28"
+    },
+    {
+     "day_gain_pct": 4.51,
+     "close": 697.97,
+     "support": 697.449,
+     "dist_pct": 0.075,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.975,
+     "close_pos": 0.987,
+     "stop": 669.551,
+     "target": 837.564,
+     "ticker": "STX",
+     "date": "2026-10-28"
+    },
+    {
+     "day_gain_pct": 0.212,
+     "close": 227.2,
+     "support": 226.738,
+     "dist_pct": 0.204,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 2.223,
+     "close_pos": 0.854,
+     "stop": 217.668,
+     "target": 272.64,
+     "ticker": "WELL",
+     "date": "2026-10-28"
+    },
+    {
+     "day_gain_pct": -0.619,
+     "close": 489.8,
+     "support": 481.067,
+     "dist_pct": 1.815,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.961,
+     "close_pos": 0.646,
+     "stop": 461.824,
+     "target": 587.76,
+     "ticker": "AMP",
+     "date": "2026-10-28"
+    },
+    {
+     "day_gain_pct": 0.69,
+     "close": 90.44,
+     "support": 90.23,
+     "dist_pct": 0.233,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.769,
+     "close_pos": 1.0,
+     "stop": 86.621,
+     "target": 108.528,
+     "ticker": "ORLY",
+     "date": "2026-10-28"
+    },
+    {
+     "day_gain_pct": -3.31,
+     "close": 91.43,
+     "support": 92.12,
+     "dist_pct": -0.749,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 2.053,
+     "close_pos": 0.661,
+     "stop": 88.435,
+     "target": 109.716,
+     "ticker": "HOOD",
+     "date": "2026-10-28"
+    },
+    {
+     "day_gain_pct": 0.878,
+     "close": 207.99,
+     "support": 209.62,
+     "dist_pct": -0.778,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.414,
+     "close_pos": 0.697,
+     "stop": 201.235,
+     "target": 249.588,
+     "ticker": "DOV",
+     "date": "2026-10-28"
+    },
+    {
+     "day_gain_pct": -0.125,
+     "close": 111.84,
+     "support": 110.866,
+     "dist_pct": 0.878,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.214,
+     "close_pos": 0.633,
+     "stop": 106.432,
+     "target": 134.208,
+     "ticker": "PFG",
+     "date": "2026-10-28"
     }
    ]
   }
