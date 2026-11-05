@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T01:15",
+ "updated": "2026-11-05T01:26",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -1363,6 +1363,124 @@
      "target": 216.78,
      "ticker": "UHS",
      "date": "2026-11-02"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 1.798,
+     "close": 72.47,
+     "support": 71.062,
+     "dist_pct": 1.982,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.439,
+     "close_pos": 0.648,
+     "stop": 68.219,
+     "target": 86.964,
+     "ticker": "WMB",
+     "date": "2026-11-03"
+    },
+    {
+     "day_gain_pct": 3.276,
+     "close": 91.41,
+     "support": 92.02,
+     "dist_pct": -0.663,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 2.38,
+     "close_pos": 0.876,
+     "stop": 88.34,
+     "target": 109.692,
+     "ticker": "CVS",
+     "date": "2026-11-03"
+    },
+    {
+     "day_gain_pct": -0.865,
+     "close": 108.92,
+     "support": 108.008,
+     "dist_pct": 0.845,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.536,
+     "close_pos": 0.526,
+     "stop": 103.687,
+     "target": 130.704,
+     "ticker": "ETR",
+     "date": "2026-11-03"
+    },
+    {
+     "day_gain_pct": -1.898,
+     "close": 331.9,
+     "support": 334.051,
+     "dist_pct": -0.644,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.506,
+     "close_pos": 0.716,
+     "stop": 320.689,
+     "target": 398.28,
+     "ticker": "AAPL",
+     "date": "2026-11-03"
+    },
+    {
+     "day_gain_pct": -0.545,
+     "close": 149.77,
+     "support": 147.694,
+     "dist_pct": 1.406,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.476,
+     "close_pos": 0.595,
+     "stop": 141.786,
+     "target": 179.724,
+     "ticker": "CDW",
+     "date": "2026-11-03"
+    },
+    {
+     "day_gain_pct": -2.516,
+     "close": 227.08,
+     "support": 223.795,
+     "dist_pct": 1.468,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.678,
+     "close_pos": 0.622,
+     "stop": 214.843,
+     "target": 272.496,
+     "ticker": "RMD",
+     "date": "2026-11-03"
+    },
+    {
+     "day_gain_pct": -0.709,
+     "close": 427.34,
+     "support": 420.502,
+     "dist_pct": 1.626,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.345,
+     "close_pos": 0.634,
+     "stop": 403.682,
+     "target": 512.808,
+     "ticker": "MPC",
+     "date": "2026-11-03"
+    },
+    {
+     "day_gain_pct": 1.338,
+     "close": 102.97,
+     "support": 101.147,
+     "dist_pct": 1.802,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.249,
+     "close_pos": 0.572,
+     "stop": 97.101,
+     "target": 123.564,
+     "ticker": "CSCO",
+     "date": "2026-11-03"
     }
    ]
   }
