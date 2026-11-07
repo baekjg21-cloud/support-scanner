@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T01:30",
+ "updated": "2026-11-07T00:51",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -1697,6 +1697,82 @@
      "target": 274.164,
      "ticker": "HON",
      "date": "2026-11-04"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 4.16,
+     "close": 166.0,
+     "support": 164.073,
+     "dist_pct": 1.175,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.669,
+     "close_pos": 0.989,
+     "stop": 157.51,
+     "target": 199.2,
+     "ticker": "ALGN",
+     "date": "2026-11-06"
+    },
+    {
+     "day_gain_pct": -4.411,
+     "close": 45.72,
+     "support": 45.05,
+     "dist_pct": 1.487,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.612,
+     "close_pos": 0.615,
+     "stop": 43.248,
+     "target": 54.864,
+     "ticker": "MNST",
+     "date": "2026-11-06"
+    },
+    {
+     "day_gain_pct": 0.227,
+     "close": 110.55,
+     "support": 110.833,
+     "dist_pct": -0.256,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.268,
+     "close_pos": 0.722,
+     "stop": 106.4,
+     "target": 132.66,
+     "ticker": "ETR",
+     "date": "2026-11-06"
+    },
+    {
+     "day_gain_pct": 1.972,
+     "close": 226.99,
+     "support": 224.355,
+     "dist_pct": 1.174,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.515,
+     "close_pos": 0.837,
+     "stop": 215.381,
+     "target": 272.388,
+     "ticker": "IEX",
+     "date": "2026-11-06"
+    },
+    {
+     "day_gain_pct": 4.118,
+     "close": 74.59,
+     "support": 75.273,
+     "dist_pct": -0.908,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.202,
+     "close_pos": 0.51,
+     "stop": 72.262,
+     "target": 89.508,
+     "ticker": "APH",
+     "date": "2026-11-06"
     }
    ]
   }
