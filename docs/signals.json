@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T01:12",
+ "updated": "2026-11-12T02:13",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -2121,6 +2121,124 @@
      "target": 87.864,
      "ticker": "SYF",
      "date": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 1.637,
+     "close": 29.81,
+     "support": 29.309,
+     "dist_pct": 1.708,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 2.102,
+     "close_pos": 0.945,
+     "stop": 28.137,
+     "target": 35.772,
+     "ticker": "NWS",
+     "date": "2026-11-10"
+    },
+    {
+     "day_gain_pct": 0.565,
+     "close": 76.54,
+     "support": 76.216,
+     "dist_pct": 0.425,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.279,
+     "close_pos": 0.724,
+     "stop": 73.167,
+     "target": 91.848,
+     "ticker": "REG",
+     "date": "2026-11-10"
+    },
+    {
+     "day_gain_pct": -2.08,
+     "close": 253.77,
+     "support": 252.404,
+     "dist_pct": 0.541,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.915,
+     "close_pos": 0.504,
+     "stop": 242.308,
+     "target": 304.524,
+     "ticker": "EXPE",
+     "date": "2026-11-10"
+    },
+    {
+     "day_gain_pct": 0.187,
+     "close": 69.62,
+     "support": 69.854,
+     "dist_pct": -0.336,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.597,
+     "close_pos": 0.875,
+     "stop": 67.06,
+     "target": 83.544,
+     "ticker": "ES",
+     "date": "2026-11-10"
+    },
+    {
+     "day_gain_pct": 1.617,
+     "close": 87.37,
+     "support": 87.2,
+     "dist_pct": 0.195,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.609,
+     "close_pos": 0.92,
+     "stop": 83.712,
+     "target": 104.844,
+     "ticker": "OKE",
+     "date": "2026-11-10"
+    },
+    {
+     "day_gain_pct": 2.044,
+     "close": 56.9,
+     "support": 56.223,
+     "dist_pct": 1.204,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.795,
+     "close_pos": 0.902,
+     "stop": 53.974,
+     "target": 68.28,
+     "ticker": "OXY",
+     "date": "2026-11-10"
+    },
+    {
+     "day_gain_pct": 4.411,
+     "close": 89.01,
+     "support": 87.824,
+     "dist_pct": 1.351,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.402,
+     "close_pos": 0.983,
+     "stop": 84.311,
+     "target": 106.812,
+     "ticker": "CVS",
+     "date": "2026-11-10"
+    },
+    {
+     "day_gain_pct": 2.075,
+     "close": 151.51,
+     "support": 148.916,
+     "dist_pct": 1.742,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.372,
+     "close_pos": 0.798,
+     "stop": 142.96,
+     "target": 181.812,
+     "ticker": "EOG",
+     "date": "2026-11-10"
     }
    ]
   }
