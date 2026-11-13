@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T02:13",
+ "updated": "2026-11-13T01:47",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -2239,6 +2239,40 @@
      "target": 181.812,
      "ticker": "EOG",
      "date": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": -0.47,
+     "close": 76.18,
+     "support": 76.216,
+     "dist_pct": -0.047,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.229,
+     "close_pos": 0.761,
+     "stop": 73.167,
+     "target": 91.416,
+     "ticker": "REG",
+     "date": "2026-11-11"
+    },
+    {
+     "day_gain_pct": 0.598,
+     "close": 57.24,
+     "support": 56.29,
+     "dist_pct": 1.688,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.837,
+     "close_pos": 0.663,
+     "stop": 54.038,
+     "target": 68.688,
+     "ticker": "OXY",
+     "date": "2026-11-11"
     }
    ]
   }
