@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T01:47",
+ "updated": "2026-11-14T01:25",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -2273,6 +2273,26 @@
      "target": 68.688,
      "ticker": "OXY",
      "date": "2026-11-11"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 1.241,
+     "close": 102.01,
+     "support": 101.65,
+     "dist_pct": 0.354,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.393,
+     "close_pos": 0.693,
+     "stop": 97.584,
+     "target": 122.412,
+     "ticker": "CSCO",
+     "date": "2026-11-12"
     }
    ]
   }
