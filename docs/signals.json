@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T01:25",
+ "updated": "2026-11-17T03:43",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -2293,6 +2293,40 @@
      "target": 122.412,
      "ticker": "CSCO",
      "date": "2026-11-12"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": -0.014,
+     "close": 72.79,
+     "support": 72.011,
+     "dist_pct": 1.082,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.686,
+     "close_pos": 0.571,
+     "stop": 69.131,
+     "target": 87.348,
+     "ticker": "TECH",
+     "date": "2026-11-16"
+    },
+    {
+     "day_gain_pct": 0.618,
+     "close": 76.58,
+     "support": 76.216,
+     "dist_pct": 0.478,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.342,
+     "close_pos": 0.774,
+     "stop": 73.167,
+     "target": 91.896,
+     "ticker": "REG",
+     "date": "2026-11-16"
     }
    ]
   }
