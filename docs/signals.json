@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T02:51",
+ "updated": "2026-11-19T02:29",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -2375,6 +2375,124 @@
      "target": 17.964,
      "ticker": "AES",
      "date": "2026-11-17"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": -0.318,
+     "close": 75.18,
+     "support": 74.206,
+     "dist_pct": 1.313,
+     "touches": 5,
+     "kind": "pivot",
+     "vol_ratio": 1.27,
+     "close_pos": 0.72,
+     "stop": 71.238,
+     "target": 90.216,
+     "ticker": "REG",
+     "date": "2026-11-18"
+    },
+    {
+     "day_gain_pct": 1.339,
+     "close": 47.69,
+     "support": 46.908,
+     "dist_pct": 1.668,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.287,
+     "close_pos": 0.807,
+     "stop": 45.031,
+     "target": 57.228,
+     "ticker": "FE",
+     "date": "2026-11-18"
+    },
+    {
+     "day_gain_pct": 1.052,
+     "close": 222.78,
+     "support": 220.274,
+     "dist_pct": 1.138,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.521,
+     "close_pos": 0.98,
+     "stop": 211.463,
+     "target": 267.336,
+     "ticker": "LOW",
+     "date": "2026-11-18"
+    },
+    {
+     "day_gain_pct": -0.125,
+     "close": 127.36,
+     "support": 125.724,
+     "dist_pct": 1.301,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.281,
+     "close_pos": 0.848,
+     "stop": 120.695,
+     "target": 152.832,
+     "ticker": "WMT",
+     "date": "2026-11-18"
+    },
+    {
+     "day_gain_pct": -0.2,
+     "close": 109.98,
+     "support": 109.8,
+     "dist_pct": 0.164,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.512,
+     "close_pos": 0.827,
+     "stop": 105.408,
+     "target": 131.976,
+     "ticker": "L",
+     "date": "2026-11-18"
+    },
+    {
+     "day_gain_pct": 3.262,
+     "close": 227.64,
+     "support": 224.714,
+     "dist_pct": 1.302,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.366,
+     "close_pos": 0.656,
+     "stop": 215.726,
+     "target": 273.168,
+     "ticker": "ROST",
+     "date": "2026-11-18"
+    },
+    {
+     "day_gain_pct": 0.334,
+     "close": 15.02,
+     "support": 14.786,
+     "dist_pct": 1.585,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 10.898,
+     "close_pos": 0.5,
+     "stop": 14.194,
+     "target": 18.024,
+     "ticker": "AES",
+     "date": "2026-11-18"
+    },
+    {
+     "day_gain_pct": 0.536,
+     "close": 1088.32,
+     "support": 1068.846,
+     "dist_pct": 1.822,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.37,
+     "close_pos": 0.849,
+     "stop": 1026.092,
+     "target": 1305.984,
+     "ticker": "URI",
+     "date": "2026-11-18"
     }
    ]
   }
