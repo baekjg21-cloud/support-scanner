@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T02:14",
+ "updated": "2026-11-21T02:07",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -2611,6 +2611,40 @@
      "target": 1305.984,
      "ticker": "URI",
      "date": "2026-11-18"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": -1.036,
+     "close": 126.04,
+     "support": 125.724,
+     "dist_pct": 0.251,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.448,
+     "close_pos": 0.753,
+     "stop": 120.695,
+     "target": 151.248,
+     "ticker": "WMT",
+     "date": "2026-11-19"
+    },
+    {
+     "day_gain_pct": 2.255,
+     "close": 193.14,
+     "support": 193.117,
+     "dist_pct": 0.012,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.707,
+     "close_pos": 0.538,
+     "stop": 185.393,
+     "target": 231.768,
+     "ticker": "EXPD",
+     "date": "2026-11-19"
     }
    ]
   }
