@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T02:07",
+ "updated": "2026-11-24T05:16",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -2645,6 +2645,166 @@
      "target": 231.768,
      "ticker": "EXPD",
      "date": "2026-11-19"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 4.709,
+     "close": 722.29,
+     "support": 724.32,
+     "dist_pct": -0.28,
+     "touches": 5,
+     "kind": "pivot",
+     "vol_ratio": 1.512,
+     "close_pos": 0.606,
+     "stop": 695.347,
+     "target": 866.748,
+     "ticker": "SPY",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": -1.875,
+     "close": 35.07,
+     "support": 34.695,
+     "dist_pct": 1.082,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.258,
+     "close_pos": 0.635,
+     "stop": 33.307,
+     "target": 42.084,
+     "ticker": "GIS",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": 0.179,
+     "close": 72.8,
+     "support": 72.011,
+     "dist_pct": 1.096,
+     "touches": 4,
+     "kind": "pivot",
+     "vol_ratio": 1.255,
+     "close_pos": 0.654,
+     "stop": 69.131,
+     "target": 87.36,
+     "ticker": "TECH",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": 0.371,
+     "close": 70.38,
+     "support": 70.503,
+     "dist_pct": -0.175,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.359,
+     "close_pos": 0.832,
+     "stop": 67.683,
+     "target": 84.456,
+     "ticker": "CMS",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": 4.002,
+     "close": 20.01,
+     "support": 19.939,
+     "dist_pct": 0.357,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.289,
+     "close_pos": 1.0,
+     "stop": 19.141,
+     "target": 24.012,
+     "ticker": "DOC",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": 3.77,
+     "close": 227.92,
+     "support": 223.997,
+     "dist_pct": 1.752,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.316,
+     "close_pos": 0.747,
+     "stop": 215.037,
+     "target": 273.504,
+     "ticker": "IEX",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": 3.903,
+     "close": 633.03,
+     "support": 621.62,
+     "dist_pct": 1.836,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.246,
+     "close_pos": 0.778,
+     "stop": 596.755,
+     "target": 759.636,
+     "ticker": "DE",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": 5.139,
+     "close": 73.24,
+     "support": 71.89,
+     "dist_pct": 1.878,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.301,
+     "close_pos": 0.61,
+     "stop": 69.014,
+     "target": 87.888,
+     "ticker": "XYZ",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": 0.676,
+     "close": 110.14,
+     "support": 109.791,
+     "dist_pct": 0.318,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.435,
+     "close_pos": 0.767,
+     "stop": 105.4,
+     "target": 132.168,
+     "ticker": "L",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": 2.865,
+     "close": 52.06,
+     "support": 51.571,
+     "dist_pct": 0.948,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.38,
+     "close_pos": 0.729,
+     "stop": 49.508,
+     "target": 62.472,
+     "ticker": "FAST",
+     "date": "2026-11-23"
+    },
+    {
+     "day_gain_pct": -0.155,
+     "close": 270.05,
+     "support": 267.503,
+     "dist_pct": 0.952,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.26,
+     "close_pos": 0.534,
+     "stop": 256.802,
+     "target": 324.06,
+     "ticker": "JNJ",
+     "date": "2026-11-23"
     }
    ]
   }
