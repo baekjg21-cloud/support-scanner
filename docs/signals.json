@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T05:16",
+ "updated": "2026-11-25T04:06",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -2805,6 +2805,124 @@
      "target": 324.06,
      "ticker": "JNJ",
      "date": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": 4.211,
+     "close": 226.18,
+     "support": 222.618,
+     "dist_pct": 1.6,
+     "touches": 6,
+     "kind": "pivot",
+     "vol_ratio": 1.223,
+     "close_pos": 0.864,
+     "stop": 213.713,
+     "target": 271.416,
+     "ticker": "ROST",
+     "date": "2026-11-24"
+    },
+    {
+     "day_gain_pct": 2.309,
+     "close": 32.35,
+     "support": 32.506,
+     "dist_pct": -0.48,
+     "touches": 5,
+     "kind": "pivot",
+     "vol_ratio": 1.227,
+     "close_pos": 0.584,
+     "stop": 31.206,
+     "target": 38.82,
+     "ticker": "CPRT",
+     "date": "2026-11-24"
+    },
+    {
+     "day_gain_pct": 0.823,
+     "close": 23.27,
+     "support": 23.39,
+     "dist_pct": -0.514,
+     "touches": 3,
+     "kind": "pivot",
+     "vol_ratio": 1.318,
+     "close_pos": 0.632,
+     "stop": 22.455,
+     "target": 27.924,
+     "ticker": "HRL",
+     "date": "2026-11-24"
+    },
+    {
+     "day_gain_pct": 4.503,
+     "close": 141.57,
+     "support": 142.56,
+     "dist_pct": -0.694,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.566,
+     "close_pos": 0.937,
+     "stop": 136.858,
+     "target": 169.884,
+     "ticker": "MRK",
+     "date": "2026-11-24"
+    },
+    {
+     "day_gain_pct": -0.943,
+     "close": 225.77,
+     "support": 223.997,
+     "dist_pct": 0.792,
+     "touches": 2,
+     "kind": "pivot",
+     "vol_ratio": 1.472,
+     "close_pos": 0.811,
+     "stop": 215.037,
+     "target": 270.924,
+     "ticker": "IEX",
+     "date": "2026-11-24"
+    },
+    {
+     "day_gain_pct": 1.316,
+     "close": 240.99,
+     "support": 241.043,
+     "dist_pct": -0.022,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.693,
+     "close_pos": 0.846,
+     "stop": 231.401,
+     "target": 289.188,
+     "ticker": "PKG",
+     "date": "2026-11-24"
+    },
+    {
+     "day_gain_pct": 0.184,
+     "close": 87.17,
+     "support": 86.676,
+     "dist_pct": 0.57,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.457,
+     "close_pos": 0.686,
+     "stop": 83.209,
+     "target": 104.604,
+     "ticker": "VTR",
+     "date": "2026-11-24"
+    },
+    {
+     "day_gain_pct": 0.545,
+     "close": 110.74,
+     "support": 109.791,
+     "dist_pct": 0.864,
+     "touches": 0,
+     "kind": "ma200",
+     "vol_ratio": 1.272,
+     "close_pos": 0.698,
+     "stop": 105.4,
+     "target": 132.888,
+     "ticker": "L",
+     "date": "2026-11-24"
     }
    ]
   }
