@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T03:36",
+ "updated": "2026-11-28T03:14",
  "config": {
   "tolerance_pct": 0.02,
   "stop_pct": 0.04,
@@ -3215,6 +3215,26 @@
      "target": 545.916,
      "ticker": "WAT",
      "date": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-28",
+   "scanned": 514,
+   "signals": [
+    {
+     "day_gain_pct": -5.238,
+     "close": 534.57,
+     "support": 525.475,
+     "dist_pct": 1.731,
+     "touches": 0,
+     "kind": "ma50",
+     "vol_ratio": 1.309,
+     "close_pos": 0.973,
+     "stop": 504.456,
+     "target": 641.484,
+     "ticker": "VRTX",
+     "date": "2026-11-27"
     }
    ]
   }
